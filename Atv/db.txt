@@ -1,0 +1,20 @@
+CREATE TABLE projetos (
+	id int primary key identity(1,1),
+	titulo nVARCHAR(255) NOT NULL,
+	status nVARCHAR(255) NOT NULL,
+	data_inicio nvarchar(255) NOT NULL,
+	tecnologias nVARCHAR(255) NOT NULL,
+	requisitos nVARCHAR(255) NOT NULL,
+	area nVARCHAR(255) NOT NULL
+);
+
+Create table Users(
+	id int primary key identity(1,1),
+	email nvarchar(255),
+	senha nvarchar(255)
+)
+
+insert into Users(email, senha) values ('a', '123')
+
+INSERT INTO projetos (titulo, status, data_inicio, tecnologias, requisitos, area)
+VALUES ('Meu primeiro projeto', 'Em andamento', '2022-01-01', 'Java, MySQL', 'Conhecimento em Java e MySQL', 'Desenvolvimento de software');
